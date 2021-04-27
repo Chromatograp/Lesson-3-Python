@@ -1,20 +1,20 @@
 print('Задача 6.')
 
-a = []
+your_list = []
 while True:
     # Цикл собирает введенные пользователем списки в один список
     str = (input("Введите числа в строку, разделив пробелом. s для выхода из программы: ")).split()
-    a.append(str)
+    your_list.append(str)
     if 's' in str:
         break
 
-d = list()
-for i in a:
+un_list = your_list()
+for i in list:
     # Цикл распаковывает списки, вложенные в предыдущий список, и собирает из них новый
-    d += i
+    un_list += i
 
-d.remove('s')
+un_list.remove('s')
 # Удаляем букву, оставив в списке только цифры
-d = map(int, d)
+un_list = map(int, un_list)
 # Переводим цифры в числовой формат
-print('Сумма ваших чисел', sum(d))
+print('Сумма ваших чисел', sum(un_list))
